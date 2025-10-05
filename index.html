@@ -55,16 +55,20 @@
     }
 
     .cell {
-      width: 90px;
-      height: 40px;
-      background: white;
-      border: 1px solid #ccc;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 14px;
-      transition: background-color 0.3s;
-    }
+  width: 100px;
+  min-height: 40px; /* 高さは最低限だけ決めておく */
+  background: white;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  text-align: center;
+  padding: 4px;
+  box-sizing: border-box;
+  white-space: normal;    /* ← 折り返しを許可 */
+  word-break: break-word; /* ← 長い単語も適切に改行 */
+}
 
     .cell.found {
       background-color: #ffe5e5; /* ほんのり赤く */
@@ -190,5 +194,6 @@
   </script>
 </body>
 </html>
+
 
 
